@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.activityBar.visible": false,
+    "editor.fontSize": 13,
+    "editor.fontWeight": "500",
+    "editor.lineHeight": 27,
+    "editor.minimap.enabled": false,
+    "git.ignoreMissingGitWarning": true,
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    }
+}
