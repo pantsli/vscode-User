@@ -11,5 +11,25 @@
     "emmet.syntaxProfiles": {
         "vue-html": "html",
         "vue": "html"
-    }
+    },
+    "vim.insertModeKeyBindings": [{
+        "before": ["k", "j"],
+        "after": ["Esc"]
+    }],
+    "vim.normalModeKeyBindings": [{
+        "before": ["leader", "w"],
+        "commands": [
+            "workbench.action.files.save",
+        ]
+    }, {
+        "before": ["Z", "Z"],
+        "commands": [":wq"]
+    }, {
+        "before": ["Z", "Q"],
+        "commands": [":q!"]
+    }],
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.useCtrlKeys": false,
+    "vim.leader": ","
 }
