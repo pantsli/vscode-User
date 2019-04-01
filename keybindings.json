@@ -4,5 +4,9 @@
         "key": "ctrl+j",
         "command": "editor.action.joinLines",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+delete ctrl+delete",
+        "command": "workbench.action.quit"
     }
 ]
