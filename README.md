@@ -1,10 +1,15 @@
 # vscode user目录的配置
-- data 为protable版本的用户数据文件夹
 
-- VSCode.desktop 为桌面快捷方式图标
+### deb安裝目录
+- /usr/share/code
+### 插件安装目录
+- $HOME/.vscode/extensions
 
-- 用户设置:VSCode-linux-x64/data/user-data/User/*.json
+### 配置文件目录
+- $HOME/.config/Code/User/或者 `VSCode-linux-x64/data/user-data/User/`
 
-## 备份：
-- data目录： cp -r ../VSCode-linux-x64/data/ ./
-- 图标： cp ../VSCode-linux-x64/VSCode.desktop ./
+### 恢复配置
+```
+cd $HOME/.config/Code
+rm -rf User
+sudo git clone https://github.com/pantsli/vscode-User.git ./User

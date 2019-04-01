@@ -1,6 +1,6 @@
 {
-    "workbench.colorTheme": "Monokai",
-    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.activityBar.visible": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "500",
     "editor.lineHeight": 27,
@@ -17,7 +17,7 @@
         "after": ["Esc"]
     }],
     "vim.normalModeKeyBindings": [{
-        "before": ["leader", "w"],
+        "before": ["leader", "w"],  
         "commands": [
             "workbench.action.files.save",
         ]
@@ -31,5 +31,6 @@
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.useCtrlKeys": false,
-    "vim.leader": ","
+    "vim.leader": ",",
+    "editor.wordWrap": "on"
 }
