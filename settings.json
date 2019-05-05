@@ -31,5 +31,6 @@
     "vim.easymotion": true,
     "vim.sneak": true,
     "vim.useCtrlKeys": false,
-    "vim.leader": ","
+    "vim.leader": ",",
+    "git.enableSmartCommit": true
 }

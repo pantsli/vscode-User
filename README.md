@@ -12,4 +12,5 @@
 cd $HOME/.config/Code
 rm -rf User
 sudo git clone https://github.com/pantsli/vscode-User.git ./User
+chmod -R 777 ./User
 ```
