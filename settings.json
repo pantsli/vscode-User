@@ -1,21 +1,41 @@
 {
     "workbench.colorTheme": "Monokai",
     "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "right",
     "editor.fontSize": 16,
     "editor.lineHeight": 22,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "git.ignoreMissingGitWarning": true,
-    "window.zoomLevel": 0.7,
+    "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
     "emmet.syntaxProfiles": {
         "vue-html": "html",
         "vue": "html"
     },
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [{
         "before": ["k", "j"],
         "after": ["Esc"]
+    },{
+        "before": ["j", "j"],
+        "after": ["Esc"]
     }],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<leader>", "d"],
+          "after": ["d", "d"]
+        },
+        {
+          "before": ["<C-n>"],
+          "commands": [":nohl"]
+        }
+      ],
     "vim.normalModeKeyBindings": [{
         "before": ["leader", "w"],  
         "commands": [
@@ -28,9 +48,12 @@
         "before": ["Z", "Q"],
         "commands": [":q!"]
     }],
-    "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.useCtrlKeys": false,
     "vim.leader": ",",
+    "vim.handleKeys": {
+        "<C-d>": false,
+        "<C-b>": false,
+        "<C-a>": false,
+        "<C-f>": false
+     },
     "git.enableSmartCommit": true
 }
