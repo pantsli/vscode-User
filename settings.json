@@ -1,7 +1,7 @@
 {
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Solarized Dark",
     "workbench.activityBar.visible": true,
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "editor.fontSize": 16,
     "editor.lineHeight": 22,
     "editor.minimap.enabled": false,
@@ -48,12 +48,13 @@
         "before": ["Z", "Q"],
         "commands": [":q!"]
     }],
-    "vim.leader": ",",
+    "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-d>": false,
         "<C-b>": false,
         "<C-a>": false,
         "<C-f>": false
      },
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "remote.SSH.showLoginTerminal": true
 }
