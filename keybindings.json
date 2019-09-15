@@ -8,5 +8,9 @@
     {
         "key": "ctrl+delete ctrl+delete",
         "command": "workbench.action.quit"
+    },
+    {
+        "key": "ctrl+z",
+        "command":"workbench.action.terminal.focusPrevious"
     }
 ]
