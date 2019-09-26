@@ -7,7 +7,6 @@
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "git.ignoreMissingGitWarning": true,
-    "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
     "emmet.syntaxProfiles": {
         "vue-html": "html",
@@ -19,35 +18,36 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [{
-        "before": ["k", "j"],
-        "after": ["Esc"]
-    },{
-        "before": ["j", "j"],
-        "after": ["Esc"]
-    }],
+    "vim.commentary": true,
+    "vim-indent-object": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        { "before": [ "k", "j" ], "after": [ "Esc" ] },
+        { "before": ["j", "j"], "after": ["Esc"] },
+        { "before": [",", ","], "after": ["Esc"] },
+        { "before": [ "leader", "w" ], "commands": ["Esc", ":w!" ] }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": [",", ","], "after": ["Esc"] },
+        { "before": ["H"], "after": ["^"] },
+        { "before": ["L"], "after": ["g","_"] },
+        { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
+        { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-          "before": ["<leader>", "d"],
-          "after": ["d", "d"]
-        },
-        {
-          "before": ["<C-n>"],
-          "commands": [":nohl"]
-        }
-      ],
-    "vim.normalModeKeyBindings": [{
-        "before": ["leader", "w"],  
-        "commands": [
-            "workbench.action.files.save",
-        ]
-    }, {
-        "before": ["Z", "Z"],
-        "commands": [":wq"]
-    }, {
-        "before": ["Z", "Q"],
-        "commands": [":q!"]
-    }],
+        { "before": [ "leader", "s" ], "commands": [ "workbench.action.files.save" ] },
+        { "before": [ "leader", "w" ], "commands": [ ":w!" ] },
+        { "before": [ "leader", "q" ], "commands": [ ":q!" ] },
+        { "before": [ "Z", "Z" ], "commands": [ ":wq!" ] },
+        { "before": [ "z", "e" ], "commands": [ ":e!" ] },
+        { "before": ["H"], "after": ["^"] },
+        { "before": ["L"], "after": ["$"] },
+        { "before": ["leader", "CR"], "commands": [":nohlsearch"] },
+        { "before": ["leader", ";"], "after": ["z","z"] },
+        { "before": ["n"], "after": ["n","z","z","z","v"] },
+        { "before": ["N"], "after": ["N","z","z","z","v"] },
+        { "before": ["<C-d>"], "after": ["<C-d>","z","z"] },
+        { "before": ["<C-u>"], "after": ["<C-u>","z","z"] }
+    ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-d>": false,
@@ -56,5 +56,7 @@
         "<C-f>": false
      },
     "git.enableSmartCommit": true,
-    "remote.SSH.showLoginTerminal": true
+    "remote.SSH.showLoginTerminal": true,
+    "vim.visualstar": true,
+    "vim.camelCaseMotion.enable": true,
 }
