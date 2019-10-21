@@ -1,6 +1,6 @@
 {
     "workbench.colorTheme": "Solarized Dark",
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "workbench.sideBar.location": "left",
     "editor.fontSize": 16,
     "editor.lineHeight": 22,
@@ -59,4 +59,5 @@
     "remote.SSH.showLoginTerminal": true,
     "vim.visualstar": true,
     "vim.camelCaseMotion.enable": true,
+    "window.menuBarVisibility": "toggle",
 }

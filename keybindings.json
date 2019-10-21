@@ -10,7 +10,38 @@
         "command": "workbench.action.quit"
     },
     {
-        "key": "ctrl+z",
+        "key": "ctrl+t",
         "command":"workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+m ctrl+m",
+        "command": "editor.action.toggleMinimap"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.zoomReset"
+    },
+    {
+        "key": "shift+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "alt+oem_1",
+        "command": "toggleVim",
+        "when": "editorTextFocus && !inDebugRepl"
     }
 ]
