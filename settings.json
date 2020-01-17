@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.activityBar.visible": false,
     "workbench.sideBar.location": "left",
     "editor.fontSize": 16,
@@ -21,7 +21,7 @@
     "vim.commentary": true,
     "vim-indent-object": true,
     "vim.insertModeKeyBindingsNonRecursive": [
-        { "before": [ "k", "j" ], "after": [ "Esc" ] },
+        { "before": ["k", "j" ], "after": [ "Esc" ] },
         { "before": ["j", "j"], "after": ["Esc"] },
         { "before": [",", ","], "after": ["Esc"] },
         { "before": [ "leader", "w" ], "commands": ["Esc", ":w!" ] }
@@ -48,8 +48,9 @@
         { "before": ["<C-d>"], "after": ["<C-d>","z","z"] },
         { "before": ["<C-u>"], "after": ["<C-u>","z","z"] }
     ],
-    "vim.leader": "<space>",
+    "vim.leader": ";",
     "vim.handleKeys": {
+        "<C-.>": false,
         "<C-d>": false,
         "<C-b>": false,
         "<C-a>": false,
@@ -60,4 +61,11 @@
     "vim.visualstar": true,
     "vim.camelCaseMotion.enable": true,
     "window.menuBarVisibility": "toggle",
+    "files.autoSave": "off",
+    "python.insidersChannel": "off",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "C_Cpp.updateChannel": "Insiders",
+    "window.zoomLevel": -1,
+    "http.proxySupport": "off",
 }
