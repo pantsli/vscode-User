@@ -31,7 +31,7 @@
         { "before": ["H"], "after": ["^"] },
         { "before": ["L"], "after": ["g","_"] },
         { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
-        { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
+        { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": [ "leader", "s" ], "commands": [ "workbench.action.files.save" ] },
@@ -67,5 +67,5 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "C_Cpp.updateChannel": "Insiders",
     "window.zoomLevel": -1,
-    "http.proxySupport": "off",
+    "http.proxySupport": "off"
 }
