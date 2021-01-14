@@ -57,7 +57,7 @@
         "<C-f>": false
      },
     "git.enableSmartCommit": true,
-    "remote.SSH.showLoginTerminal": true,
+    // "remote.SSH.showLoginTerminal": true,
     "vim.visualstar": true,
     "vim.camelCaseMotion.enable": true,
     "window.menuBarVisibility": "toggle",
@@ -66,6 +66,8 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "C_Cpp.updateChannel": "Insiders",
-    "window.zoomLevel": -1,
-    "http.proxySupport": "off"
+    "http.proxySupport": "off",
+    "remote.SSH.remotePlatform": {
+        "192.168.33.100": "linux"
+    }
 }
